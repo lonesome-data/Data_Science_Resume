@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Forester - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Sean Forester w/ inspiration from Deedy
+%
+% Original repository:
+% https://github.com/lonesome-data
+%
+% IMPORTANT: COMPILE WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{Forester-Resume}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Sean}{Forester}
+{ 
+Data Science Consultant. Technical lead capable of individually contributing to machine learning prototypes. Penchant for problem framing and communicating data-driven solutions to decision makers. %built through hands-on experience after earning M.S. in Computer Science. %Available in September. 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+\sectionsep
+910.376.1138
+\href{mailto:sean.forester99@gmail.com}{\bf sean.forester99@gmail.com}\\
+Github:// \href{https://github.com/lonesome-data}{\bf lonesome-data} \\
+LinkedIn://  \href{https://www.linkedin.com/in/smforester/}{\bf {smforester}} \\
+
+\section{Skills}
+\subsection{Environment}
+\location{Jupyter Labs/Notebook \textbullet{} Google Colab \textbullet{} Azure}
+\subsection{Machine Learning}
+\location{Pandas \textbullet{} Scikit-learn \textbullet{} TensorFlow \textbullet{} R}
+\subsection{Visualization}
+\location{PyViz \textbullet{} Bokeh \textbullet{} seaborn \textbullet{} Tableau}
+\subsection{Version Control}
+\location{Git \textbullet{} Bitbucket}
+
+\section{Education} 
+\subsection{Naval Postgraduate}
+\descript{Academic Certificate\\
+\textbf{Data Science}}
+\location{Monterey, CA}
+
+\sectionsep 
+\subsection{Tuck School of Business}
+\location{at Dartmouth}
+\descript{Executive Education Certificate}
+
+\sectionsep
+\subsection{Naval Postgraduate}
+\descript{\textbf{MS, Computer Science}}
+\location{Monterey, CA}
+
+\sectionsep
+\subsection{U.S. Naval Academy}
+\descript{\textbf{BS, Ocean Engineering}}
+\location{Annapolis, MD}
+\textbf{4-yr Varsity Football}
+
+\sectionsep
+\subsection{Columbia University}
+\descript{Professional Certificate\\
+\textbf{Data Science for Executives}}
+\location{edX Aug 2019}
+
+%\sectionsep
+%\subsection{Microsoft Pro Program}
+%\descript{Professional Certificate\\
+%\textbf{Data Science}}
+%\location{edX Aug 2017}
+
+\sectionsep
+\section{Coursework}
+\subsection{Graduate}
+Advanced Machine Learning \\
+Network Modeling and Analysis \\
+Artificial Intelligence \\
+Cloud Computing \\
+Database Systems\\
+
+\sectionsep
+\subsection{Undergraduate}
+Ocean Systems Design \\
+Adv Electrical Engineering\\
+Engineering Thermodynamics \\
+Adv Physics \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Accomplished [X] as measured by [Y] by doing [Z]
+% https://www.linkedin.com/pulse/20140929001534-24454816-my-personal-formula-for-a-better-resume/
+\section{Experience}
+\runsubsection{Auction.com}
+\descript{Lead Data Analyst + Data Science Practitioner}
+\location{Jun 19 - Aug 19 | Irvine, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improved accuracy of legacy model by over 10 percent  prototyping an XGBoost classifier to target distressed assets saving potentially hundreds of thousands \$
+\item Clustered customer behavior to minimize time to value of online experience  
+\item Provided quality assurance to business intelligence team responsible for analytic dashboard reporting
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Marines}
+\descript{Principal Consultant + Data Science Practitioner}
+\location{Aug 16 - May 19 | Greater San Diego, CA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Increased military equipment availability by 5 percent leading multiple cross-functional engagement teams responsible for auditing supply and maintenance compliance by Marine Corps units West of the Mississippi River
+\item Improved executive summary preparation time 15 percent by creating and implementing evidence-based root cause analysis and problem framing   
+\item Refined internal business practices by creating and implementing a post-audit client survey with aggregate results displayed within a Tableau dashboard 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Marines}
+\descript{Engagement Manager +  Data Science Practitioner}
+\location{Aug 15 - Aug 16 | Greater San Diego, CA}
+\begin{tightemize}
+\item Led collaborative efforts of 40-associates resulting in 100 percent on-time delivery of end-to-end analyses predicated on accurate requirements specification, unbiased data collection, munging/wrangling (Python), machine learning prototypes (Python), and evidence-based solutions
+\item Uncovered internal practice disparity through a neural net classifier using Google Colab and GPUs resulting in major revision to tradecraft application
+\item Enforced talent acquisition/retention and improved performance recognition by conducting (unsupervised) Latent Semantic Analysis in unstructured collection of archived awards and identifying key patterns 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Marines}
+\descript{Consultant + Logistics Manager}
+\location{Aug 12 - Jun 15 | Okinawa, Japan}
+\begin{tightemize}
+\item Informed US Ambassador to Japan's decision making by providing key insights related to military base migration within the island of Okinawa
+\item Worked independently and collaboratively with key stakeholders in detailed planning and execution of multilateral military exercises in Australia, Taiwan, Japan, Maldives, Philippines and South Korea
+\item Exploited nonlinear solutions from ensemble decision trees to improve scheduling of military aircraft 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{U.S. Naval Academy}
+\descript{Computer Science Senior Lecturer}
+\location{Sep 09 - Jul 12 | Annapolis, MD}
+\begin{tightemize}
+\item Hand-selected from nine Computer Science postgrads to teach at the US Naval Academy as a Senior Computer Science Instructor
+\item Runner-up among 20 candidates nominated for Faculty Teaching Excellence
+\item Taught computer architecture, networking, cyber security, algorithm complexity and machine learning concepts
+\item As Chair of Computer Science Dept Recruitment Committee, exceeded STEM, diversity, and inclusion quotas established by the Secretary of the Navy by analyzing and empathizing with behavioral economics of students and competition (other departments)
+%\item As Computer Science Dept Finance Officer, executed 100 %percent of budget without incident
+\end{tightemize}
+\sectionsep
+\end{minipage} 
+\end{document}  \documentclass[]{article}
